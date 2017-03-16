@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pravasagar.brs.ViewCarpool"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/yourRides"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Rides"
+        android:textColor="#0273C0"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/rideList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yourRides"
+        android:layout_marginBottom="10dp">
+    </ListView>
+
+    <ProgressBar
+        android:layout_below="@id/yourRides"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="2dp"
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        >
+    </ProgressBar>
+
+</RelativeLayout>
